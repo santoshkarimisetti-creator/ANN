@@ -11,10 +11,6 @@ __pycache__/
 # Jupyter
 .ipynb_checkpoints/
 
-# Dataset
-*.csv
-*.zip
-
 # TensorFlow / Keras
 *.h5
 *.keras
