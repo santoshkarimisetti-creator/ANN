@@ -15,6 +15,19 @@ __pycache__/
 *.h5
 *.keras
 saved_model/
+checkpoints/
+
+# CNN project artifacts
+CNN/**/runs/
+CNN/**/output/
+CNN/**/Data/
+CNN/**/data/
+CNN/**/dataset/
+CNN/**/images/
+CNN/**/labels/
+CNN/**/*.pt
+CNN/**/*.bin
+CNN/**/*.weights
 
 # Python distribution
 build/
