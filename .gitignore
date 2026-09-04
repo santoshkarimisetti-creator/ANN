@@ -17,13 +17,16 @@ __pycache__/
 saved_model/
 checkpoints/
 
+*.png
+
+
 # CNN project artifacts
 CNN/**/runs/
 CNN/**/output/
 CNN/**/Data/
 CNN/**/data/
 CNN/**/dataset/
-CNN/**/images/
+CNN/**/images/*.png
 CNN/**/labels/
 CNN/**/*.bin
 CNN/**/*.weights
