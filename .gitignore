@@ -25,10 +25,9 @@ CNN/**/data/
 CNN/**/dataset/
 CNN/**/images/
 CNN/**/labels/
-CNN/**/*.pt
 CNN/**/*.bin
 CNN/**/*.weights
-
+runs/**
 # Python distribution
 build/
 dist/
