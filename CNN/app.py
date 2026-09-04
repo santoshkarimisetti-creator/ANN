@@ -15,6 +15,23 @@ CLASS_NAMES = [
     "Potato Early Blight",
     "Tomato Bacterial Spot",
 ]
+DISEASE_SUGGESTIONS = {
+    "Corn Common Rust": [
+        "Remove severely affected leaves and dispose of them away from the crop.",
+        "Improve airflow by maintaining suitable spacing between plants.",
+        "Ask a local agronomist about an approved fungicide if symptoms spread.",
+    ],
+    "Potato Early Blight": [
+        "Remove infected foliage and clear fallen plant debris from the soil.",
+        "Water at the base of the plant and avoid wetting leaves overnight.",
+        "Use crop rotation and ask a local agronomist about approved treatment.",
+    ],
+    "Tomato Bacterial Spot": [
+        "Remove affected leaves and avoid handling healthy plants afterward.",
+        "Avoid overhead watering and keep foliage dry with good plant spacing.",
+        "Use disease-free seed or transplants and consult a local agronomist.",
+    ],
+}
 IMAGE_SIZE = (224, 224)
 
 st.set_page_config(page_title="CNN Vision Suite", page_icon="🖼️", layout="wide")
@@ -119,9 +136,10 @@ elif section == "🌿 Plant Disease Classification":
             st.success("Inference complete")
             st.metric("Predicted class", label)
             st.metric("Confidence", f"{confidence:.1%}")
-            st.subheader("Class probabilities")
-            for name, probability in predictions:
-                st.progress(probability, text=f"{name}: {probability:.1%}")
+            st.subheader("Suggested next steps")
+            for suggestion in DISEASE_SUGGESTIONS[label]:
+                st.markdown(f"- {suggestion}")
+            st.caption("These suggestions are general guidance. Confirm the diagnosis with a plant-health professional before treatment.")
     else:
         st.info("Upload a JPG, PNG, or WEBP image to test the classifier.")
 
