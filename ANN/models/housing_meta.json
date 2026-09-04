@@ -1,0 +1,18 @@
+{
+  "feature_cols": [
+    "Square_Feet",
+    "Num_Bedrooms",
+    "Num_Bathrooms",
+    "Num_Floors",
+    "Year_Built",
+    "Has_Garden",
+    "Has_Pool",
+    "Garage_Size",
+    "Location_Score",
+    "Distance_to_Center"
+  ],
+  "r2": 0.9394178556908054,
+  "mae": 24554.917115144395,
+  "rmse": 30187.193396699364,
+  "architecture": "128 -> 64 -> 32 -> 1"
+}
