@@ -31,6 +31,8 @@ CNN/**/labels/
 CNN/**/*.bin
 CNN/**/*.weights
 runs/**
+
+weights/
 # Python distribution
 build/
 dist/
